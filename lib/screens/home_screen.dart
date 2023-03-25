@@ -9,10 +9,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Welcome to my first app')),
+      appBar: AppBar(title: Text('F1 race schedules')),
       body: Center(
           child: Container(
-        child: Text('Hiiiiiiii'),
+        child: Text('Welcome Riderr🎉'),
       )),
       drawer: Drawer(),
     );
