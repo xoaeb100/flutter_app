@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:the_basics/widgets/drawer.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key});
@@ -14,7 +15,7 @@ class HomeScreen extends StatelessWidget {
           child: Container(
         child: Text('Welcome Riderr🎉'),
       )),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
