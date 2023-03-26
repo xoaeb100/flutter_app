@@ -23,13 +23,14 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Column(children: [
           Image.asset(
             'assets/images/login.png',
-            fit: BoxFit.cover,
+            // fit: BoxFit.none
+            height: 200,
           ),
           SizedBox(
             height: 20,
           ),
           Text(
-            'Welcome $name !',
+            'Hi $name, Welcome to Flopkart! ',
             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           Padding(
@@ -73,7 +74,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       onChanged: (value) {
                         passwordEntered = true;
-                        
+
                         setState(() {});
                       },
                     ),

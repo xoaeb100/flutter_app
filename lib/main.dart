@@ -18,7 +18,13 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: ThemeData(
           primarySwatch: Colors.amber,
-          fontFamily: GoogleFonts.lato().fontFamily),
+          fontFamily: GoogleFonts.lato().fontFamily,
+          appBarTheme: AppBarTheme(
+              color: Colors.amber,
+              elevation: 0.0,
+              iconTheme: IconThemeData(color: Colors.black),
+              toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
+              titleTextStyle: Theme.of(context).textTheme.headline6)),
       initialRoute: MyRoutes.homeRoute,
       debugShowCheckedModeBanner: false,
 
